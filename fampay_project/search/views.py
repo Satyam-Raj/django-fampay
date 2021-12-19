@@ -19,7 +19,6 @@ def index(request):
             'maxResults' : 9,
             'type' : 'video'
         }
-
         r = requests.get(search_url, params=search_params)
 
         results = r.json()['items']
